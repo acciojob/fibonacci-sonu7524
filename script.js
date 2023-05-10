@@ -1,7 +1,15 @@
 function fibonacci(num) {
-	if(num==0) return 0;
-	if(num==1) return 1;
-	return fibonacci(num-1) + fibonacci(n-2);
+	let a = 0;
+	let b = 1;
+	let idx = 2;
+	while(idx!= num){
+		sum = a+b;
+		a = b;
+		b = sum;
+		idx++;
+	}
+	return sum;
 }
 
+console.log(fibonacci(5));
 module.exports = fibonacci;
